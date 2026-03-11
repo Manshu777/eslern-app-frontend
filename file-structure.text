@@ -1,0 +1,120 @@
+eslearn-app/
+├── .expo/                      # Expo cache (git ignored)
+├── assets/                     # Static assets
+│   ├── images/                 # Logos, icons, onboarding images
+│   ├── fonts/                  # Custom fonts
+│   └── adaptive-icon.png
+│
+├── src/
+│   ├── api/                    # All API calls (axios instance + endpoints)
+│   │   ├── instance.ts         # Axios base config + interceptors
+│   │   ├── auth.ts
+│   │   ├── exams.ts
+│   │   ├── studyMaterials.ts
+│   │   ├── previousPapers.ts
+│   │   ├── mockTests.ts
+│   │   ├── attempts.ts
+│   │   └── analytics.ts
+│   │
+│   ├── components/             # Reusable UI components
+│   │   ├── common/             # Button, Input, Card, Loader, Modal, etc.
+│   │   ├── exam/               # ExamCard, SubjectCard, ExamSelector
+│   │   ├── mocktest/           # QuestionCard, OptionButton, Timer, SubmitPopup
+│   │   ├── pdf/                # PDFViewer, PDFCard
+│   │   ├── video/              # VideoPlayer
+│   │   ├── analytics/          # Charts, ProgressCircle, AccuracyGraph
+│   │   └── layout/             # Header, BottomTabBar, ScreenWrapper
+│   │
+│   ├── navigation/             # React Navigation setup
+│   │   ├── AppNavigator.tsx    # Root navigator
+│   │   ├── AuthStack.tsx
+│   │   ├── MainTabNavigator.tsx
+│   │   ├── HomeStack.tsx
+│   │   ├── StudyStack.tsx
+│   │   ├── MockTestStack.tsx
+│   │   ├── PapersStack.tsx
+│   │   └── ProfileStack.tsx
+│   │
+│   ├── screens/                # All screens (1 folder per main section)
+│   │   ├── auth/
+│   │   │   ├── SplashScreen.tsx
+│   │   │   ├── OnboardingScreen.tsx
+│   │   │   ├── LoginScreen.tsx
+│   │   │   ├── SignupScreen.tsx
+│   │   │   └── SelectExamScreen.tsx
+│   │   │
+│   │   ├── home/
+│   │   │   ├── HomeScreen.tsx
+│   │   │   └── DashboardStats.tsx
+│   │   │
+│   │   ├── study/
+│   │   │   ├── StudyMaterialScreen.tsx
+│   │   │   ├── SubjectListScreen.tsx
+│   │   │   ├── ChapterListScreen.tsx
+│   │   │   ├── PDFViewerScreen.tsx
+│   │   │   └── VideoPlayerScreen.tsx
+│   │   │
+│   │   ├── previous-papers/
+│   │   │   ├── PapersHomeScreen.tsx
+│   │   │   ├── PapersFilterScreen.tsx
+│   │   │   ├── PapersListScreen.tsx
+│   │   │   └── PaperPreviewScreen.tsx
+│   │   │
+│   │   ├── mock-test/
+│   │   │   ├── MockTestHomeScreen.tsx
+│   │   │   ├── MockTestListScreen.tsx
+│   │   │   ├── TestInstructionsScreen.tsx
+│   │   │   ├── LiveTestScreen.tsx           # Main exam screen
+│   │   │   ├── SubmitConfirmDialog.tsx
+│   │   │   ├── ResultScreen.tsx
+│   │   │   ├── SolutionReviewScreen.tsx
+│   │   │   └── TestHistoryScreen.tsx
+│   │   │
+│   │   ├── performance/
+│   │   │   ├── PerformanceDashboard.tsx
+│   │   │   ├── DetailedAnalyticsScreen.tsx
+│   │   │   └── SubjectWiseReport.tsx
+│   │   │
+│   │   └── profile/
+│   │       ├── ProfileScreen.tsx
+│   │       ├── EditProfileScreen.tsx
+│   │       ├── SavedItemsScreen.tsx
+│   │       ├── TestHistoryScreen.tsx
+│   │       └── SettingsScreen.tsx
+│   │
+│   ├── context/                # React Context (Auth, Exam, Theme)
+│   │   ├── AuthContext.tsx
+│   │   ├── ExamContext.tsx         # Currently selected exam(s)
+│   │   └── ThemeContext.tsx
+│   │
+│   ├── hooks/                  # Custom hooks
+│   │   ├── useAuth.ts
+│   │   ├── useSelectedExam.ts
+│   │   ├── useMockTestTimer.ts
+│   │   └── usePerformance.ts
+│   │
+│   ├── utils/                  # Helpers & constants
+│   │   ├── constants.ts        # Colors, exam list, API endpoints
+│   │   ├── helpers.ts          # Format time, calculate accuracy
+│   │   ├── storage.ts          # AsyncStorage wrappers
+│   │   └── validation.ts
+│   │
+│   ├── types/                  # TypeScript interfaces
+│   │   ├── index.ts
+│   │   ├── User.ts
+│   │   ├── Exam.ts
+│   │   ├── MockTest.ts
+│   │   ├── Question.ts
+│   │   └── Attempt.ts
+│   │
+│   └── theme/                  # Tailwind or custom styling
+│       ├── colors.ts
+│       ├── spacing.ts
+│       └── index.ts
+│
+├── App.tsx                     # Entry point
+├── app.json                    # Expo config
+├── babel.config.js
+├── tsconfig.json
+├── tailwind.config.js          # If using twrnc or NativeWind
+└── package.json

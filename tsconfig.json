@@ -13,5 +13,9 @@
     "**/*.tsx",
     ".expo/types/**/*.ts",
     "expo-env.d.ts"
+<<<<<<< HEAD
 , "app/index.jsx", "app/_layout.jsx", "constants/Colors.js"  ]
+=======
+  ]
+>>>>>>> 3c8bad64b5c469182088e100d627beae35948f1f
 }

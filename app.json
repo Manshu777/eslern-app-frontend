@@ -1,11 +1,20 @@
 {
   "expo": {
+<<<<<<< HEAD
     "name": "himanshu",
     "slug": "himanshu",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
     "scheme": "himanshu",
+=======
+    "name": "eslean",
+    "slug": "eslean",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/icon.png",
+    "scheme": "eslean",
+>>>>>>> 3c8bad64b5c469182088e100d627beae35948f1f
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
     "ios": {

@@ -1,0 +1,9 @@
+npm install @react-navigation/native @react-navigation/bottom-tabs @react-navigation/native-stack
+npm install react-native-screens react-native-safe-area-context
+npm install axios react-native-mmkv @react-native-async-storage/async-storage
+npm install react-native-pdf react-native-video
+npm install @shopify/flash-list   # Better than FlatList
+npm install react-native-reanimated react-native-gesture-handler
+npm install nativewind tailwindcss   # or twrnc
+npm install victory-native            # For charts in analytics
+npm install zod
